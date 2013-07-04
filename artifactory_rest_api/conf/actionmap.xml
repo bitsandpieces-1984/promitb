@@ -1,0 +1,33 @@
+<config version="0.1">
+  <action_maps>
+		<mkdir>
+				<request_type>put</request_type>						
+				<required>dirname</required>
+		</mkdir>
+		<rmdir>
+				<request_type>delete</request_type>
+				<required>dirname</required>
+		</rmdir>
+		<ls>
+				<request_type>get</request_type>
+				<uri>api/storage</uri>
+				<required>dirname</required>
+		</ls>
+
+		<checkin>
+				<request_type>put</request_type>
+				<required>remotedirname</required>
+				<required>localfilename</required>
+		</checkin>
+		<checkout>
+				<request_type>get</request_type>
+				<required>artifactname</required>
+				<required>localdirname</required>
+		</checkout>
+		<rm>
+				<request_type>delete</request_type>
+				<required>filename</required>
+		</rm>
+
+	</action_maps>
+</config>
