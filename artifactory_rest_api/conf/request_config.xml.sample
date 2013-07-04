@@ -1,0 +1,9 @@
+<config version="0.1">
+  <LoginDetails>
+		<HostUrl>http://....:port/artifactory</HostUrl>
+		<UserName>admin</UserName>
+		<PassWord>password</PassWord>
+		<DefaultRepo>libs-release-local</DefaultRepo>
+  	<LogDir>/tmp</LogDir>
+</LoginDetails>
+</config>
